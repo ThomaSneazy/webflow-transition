@@ -1,3 +1,6 @@
-import './styles/style.css'
+import Swup from 'swup';
 
-console.log('Hello')
+
+const swup = new Swup();
+
+console.log('test- transi')
