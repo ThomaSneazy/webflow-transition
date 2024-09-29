@@ -15,3 +15,33 @@ html.is-animating .transition-fade {
 	opacity: 0;
   transform: translateX(0);
 } */ 
+
+
+body {
+    --swup-overlay-theme-color: black;
+    --swup-overlay-theme-duration: 1s;
+    --swup-overlay-theme-delay: .2s;
+    --swup-overlay-theme-scale: 1.2;
+    --swup-overlay-theme-skew: 5deg;
+  }
+  
+  .transition-fade {
+    transition: opacity 1s, transform 1s;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  
+  html.is-rendering .transition-fade {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  
+  html.is-changing .transition-fade {
+    transition: opacity 1s, transform 1s;
+  }
+  
