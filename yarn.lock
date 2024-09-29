@@ -10,6 +10,27 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@swup/overlay-theme@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/@swup/overlay-theme/-/overlay-theme-2.0.1.tgz"
+  integrity sha512-8SGIvq8av5cFTxaYy1isZsQXWme2d1onE/cy4QpsyRlxiyhzXbYDAgrBLZzY0Ev8TGf3dYFxXg195eOMW1OP+Q==
+  dependencies:
+    "@swup/theme" "^2.0.0"
+
+"@swup/plugin@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/@swup/plugin/-/plugin-4.0.0.tgz"
+  integrity sha512-3Kq31BJxnzoPg643YxGoWQggoU6VPKZpdE5CqqmP7wwkpCYTzkRmrfcQ29mGhsSS7xfS7D33iZoBiwY+wPoo2A==
+  dependencies:
+    swup "^4.0.0"
+
+"@swup/theme@^2.0.0":
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/@swup/theme/-/theme-2.1.0.tgz"
+  integrity sha512-nwAzx+GYySIYs6uSCFYGNdpLWv2z/mEryRD1gvmIqsaSP2N7sVd4mKAboraJAzIzbasRhTsTQzyN1LfLeti3AA==
+  dependencies:
+    "@swup/plugin" "^4.0.0"
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
@@ -232,7 +253,7 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-swup@^4.8.1:
+swup@^4.0.0, swup@^4.8.1:
   version "4.8.1"
   resolved "https://registry.npmjs.org/swup/-/swup-4.8.1.tgz"
   integrity sha512-MEXrQUvsUE9lyt1SX8KEZcGmPigAvtkVvHwJf22MOKsjb+aDgiljTc5LTXz0ehsA/1OOXRqvtS4kWLey26i/hQ==
