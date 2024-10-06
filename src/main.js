@@ -40,10 +40,8 @@ function initProjectLinks() {
 }
 
 async function animateToProject(projectImage, projectSlug) {
-  // Attendre que la nouvelle page soit chargée
   await swup.preloadPage(`/project/${projectSlug}`);
   
-  // Trouver l'élément correspondant sur la nouvelle page
   const newProjectImage = document.querySelector(`.project-detail[data-project-slug="${projectSlug}"] .project-image`);
   
   // Animer avec GSAP Flip
@@ -52,7 +50,6 @@ async function animateToProject(projectImage, projectSlug) {
     duration: 1,
     ease: "power2.inOut",
     onComplete: () => {
-      // Animation terminée, terminer la transition Swup
       swup.triggerEvent('animationOutDone');
     }
   });
